@@ -744,7 +744,7 @@
 
     <!-- Bingie Sublabel - tagline/watch now/album or song/pvr -->
     <variable name="BingieSublabel">
-        <!-- <value condition="!String.IsEmpty(ListItem.TagLine)">[B]$INFO[ListItem.TagLine][/B]</value> --> <!--taglines were annoying me-->
+        <value condition="!String.IsEmpty(ListItem.TagLine)">[B]$INFO[ListItem.TagLine][/B]</value>
         <!-- <value condition="$EXP[IsMainMenuOpened] + !String.IsEmpty(Window(Home).Property(ListItem.TagLine))">[B]$INFO[Window(Home).Property(ListItem.TagLine)][/B]</value> -->
         <value condition="$EXP[IsTvShowDBTypeNoFallback] + $EXP[IsTVShowInLastEpisodes]">$VAR[GetNewEpisodesTVShowSeason,$LOCALIZE[31070] , $LOCALIZE[31067]]</value>
         <value condition="$EXP[IsMainMenuOpened] + $EXP[IsTvShowDBType] + $EXP[IsTVShowInLastEpisodesBasedOnProps]">$VAR[GetNewEpisodesTVShowSeasonBasedOnProps,$LOCALIZE[31070] , $LOCALIZE[31067]]</value>
@@ -855,7 +855,7 @@
 
     <variable name="BingieDialogInfoSublabel">
         <value condition="[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(Window(Home).Property(ListItem.dbtype),episode)] | [Skin.HasSetting(ShowEpisodePlotInfoDialog) + Control.IsVisible(5050)]">$VAR[BingieDialogEpisodeInfoLabel]</value>
-        <value condition="!String.IsEmpty(ListItem.TagLine)">$INFO[ListItem.TagLine]</value>
+        <value condition="!String.IsEmpty(ListItem.TagLine)">[B]$INFO[ListItem.TagLine][/B]</value>
     </variable>
 
     <variable name="BingiePlot">
