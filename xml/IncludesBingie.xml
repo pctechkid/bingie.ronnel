@@ -1830,7 +1830,7 @@
                 <top>-143</top>
                 <height max="175">auto</height>
                 <width max="815">auto</width>
-                <font>Reg50</font> <!--reg70 causing issues with long titles carrying over to a second line now displaying properly-->
+                <font>Reg64</font> <!--reg70 causing issues with long titles carrying over to a second line now displaying properly-->
                 <align>left</align>
                 <aligny>center</aligny>
                 <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
