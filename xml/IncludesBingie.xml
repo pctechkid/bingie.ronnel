@@ -1108,7 +1108,7 @@
                     <include content="Bingie_Menu_Current_Indicator" condition="!Skin.HasSetting(EnhancedHome_Circular)"> 
                          <param name="keepvisible" value="true" />
                          <param name="visibility" value="$EXP[IsMenuEntryActive] + !$EXP[IsMainMenuOpened]" />
-                         <param name="left" value="302" /> 
+                         <param name="left" value="304" /> 
                      </include> 
 					 <!--added to keep the red line stationary on sideblade menu instead of moving with focus-->
 						<include content="Bingie_Menu_Current_Indicator"> 
@@ -1143,9 +1143,9 @@
                 <focusedlayout height="85" width="bingie_menu_width" condition="![Control.HasFocus(900) | Control.HasFocus(4444)]">
                     <!--Don't know what this is supposed to do!-->
 					<include content="Bingie_Menu_Current_Indicator" condition="!Skin.HasSetting(EnhancedHome_Circular)">
-                        <param name="keepvisible" value="true" />
+                        <param name="keepvisible" value="false" />
                         <param name="visibility" value="$EXP[IsMenuEntryActive] + !$EXP[IsMainMenuOpened]" />
-                        <param name="left" value="100" />  
+                        <param name="left" value="304" />  
                     </include>
                     <include content="Bingie_Menu_Icon" condition="!Skin.HasSetting(DisableIconsMainMenu)">
                         <param name="includeAnimCond" value="true" />
@@ -2962,4 +2962,3 @@
         <value condition="String.IsEqual(Window(Home).Property(ListItem.PercentPlayed),100)">0</value>
     </variable>
 </includes>
-
