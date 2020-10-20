@@ -111,7 +111,7 @@
                         <width max="815">auto</width>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <font>Reg60</font>
+                        <font>Reg62</font>
                         <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
                         <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
                         <label>[B]$VAR[BingieSpotlightTitle][/B]</label>
@@ -148,7 +148,7 @@
                         <visible>Skin.HasSetting(ShowPlotInBingieSpotlight) | !$EXP[IsPlayingUnrecognizedContent]</visible>
                         <animation effect="fade" time="500">VisibleChange</animation>
                         <include>Default_Visible_Fade</include>
-						<top>50</top>
+						<top>0</top>
 						<height min="50" max="115">auto</height> <!--spotlight content improvements-->
                         <width max="720">auto</width>
                         <align>left</align>
