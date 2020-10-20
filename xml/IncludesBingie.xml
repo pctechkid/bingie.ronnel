@@ -222,6 +222,17 @@
             <label>$VAR[RatingDecimalToPercentage,,% $LOCALIZE[31857]]</label>
             <include>Default_Visible_Fade</include>
         </control>
+		<control type="label" id="61131">
+            <visible>String.IsEmpty(Control.GetLabel(6113)) + !Control.IsVisible(6111) + !String.IsEmpty(ListItem.title)</visible>
+            <posy>6</posy>  <!--straightens up the details row-->
+            <height>35</height>
+            <width>auto</width>
+            <aligny>center</aligny>
+            <font>bold26</font>
+            <textcolor>springgreen</textcolor>
+            <label>82% $LOCALIZE[31857]</label>
+            <include>Default_Visible_Fade</include>
+        </control>
     </include>
 
     <!-- Year / Premiered / PVR Time -->
