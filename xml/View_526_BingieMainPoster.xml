@@ -24,8 +24,20 @@
                     <font>Bold31</font>
                     <align>left</align>
                     <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
-                    <label>$VAR[BingieMainContentHeader]</label>
+                    <label>$VAR[BingieMainContentHeader] $INFO[Window(Home).Property(Movies.Count),(,)]</label>
                     <visible>Integer.IsGreater(Container(526).NumItems,0)</visible>
+                    <visible>String.IsEqual(Container.FolderPath, videodb://movies/titles/)</visible>
+                </control>
+                 <control type="textbox">
+                    <animation effect="slide" start="0" end="0,-15" time="0" condition="Skin.HasSetting(View526_DisableFixedBingieFrame) + Skin.HasSetting(View526_EnableZoomEffect)">Conditional</animation>
+                    <width>100%</width>
+                    <height>40</height>
+                    <font>Bold31</font>
+                    <align>left</align>
+                    <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+                    <label>$VAR[BingieMainContentHeader] $INFO[Window(Home).Property(TVshows.Count),(,)]</label>
+                    <visible>Integer.IsGreater(Container(526).NumItems,0)</visible>
+                    <visible>String.IsEqual(Container.FolderPath, videodb://tvshows/titles/)</visible>
                 </control>
 
                 <include condition="!Skin.HasSetting(View526_UseFixedLayout) | !Skin.HasSetting(View_526_HorizontalNavigation)" content="Bingie_Main_Poster_View">
