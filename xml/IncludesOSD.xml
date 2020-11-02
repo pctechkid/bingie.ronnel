@@ -2905,8 +2905,8 @@
 			<control type="image">
 				<width>100%</width>
 				<height>100%</height>
-				<texture background="true" border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/vignette.png</texture>
-				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
+				<texture background="true" border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/Dark.png</texture>
+				<colordiffuse>ff000000</colordiffuse>
 			</control>
 			<!--Video Cover-->
 			<control type="image" id="39623">
