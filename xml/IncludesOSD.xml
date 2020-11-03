@@ -886,7 +886,7 @@
 					<align>left</align>
 					<font>Reg60</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<label>[B]$VAR[OSDLabel4][/B]</label>
 					<scroll>false</scroll>
 					<wrapmultiline>true</wrapmultiline>
@@ -2906,16 +2906,15 @@
 				<width>100%</width>
 				<height>100%</height>
 				<texture background="true" border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/Dark.png</texture>
-				<colordiffuse>ff000000</colordiffuse>
+				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
 			</control>
 			<!--Video Cover-->
 			<control type="image" id="39623">
-				<posx>254</posx>
-				<posy>320</posy>
+				<posx>170</posx>
+				<posy>90</posy>
 				<align>left</align>
 				<aligny>center</aligny>
-				<width>253</width>
-				<height>380</height>
+				<width>350</width>
 				<fadetime>200</fadetime>
 				<texture background="true">$VAR[OSDImageDefault]</texture>
 				<bordertexture border="20" colordiffuse="black">diffuse/poster_shadow.png</bordertexture>
@@ -2938,7 +2937,8 @@
 					<align>left</align>
 					<width>250</width>
 					<label>31366</label>
-					<font>Light30</font>
+					<font>Reg32</font>
+					<shadowcolor>black</shadowcolor>
 				</control>
 				<!-- TITLE -->
 				<control type="label">
@@ -2946,7 +2946,7 @@
 					<align>left</align>
 					<font>Bold74</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<label>[B]$VAR[OSDLabel4][/B]</label>
 					<scroll>false</scroll>
 				</control>
@@ -2956,7 +2956,7 @@
 					<align>left</align>
 					<font>Reg34</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<label>$VAR[OSDLabel5]</label>
 					<scroll>false</scroll>
 					<visible>!String.IsEmpty(Control.GetLabel(74823))</visible>
@@ -2966,9 +2966,9 @@
 					<width>1000</width>
 					<height>45</height>
 					<align>left</align>
-					<font>Light24</font>
+					<font>Reg24</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<label>$VAR[premiered_or_year,,   ]$INFO[VideoPlayer.MPAA,,   ]$INFO[VideoPlayer.Duration(mins),,m]</label>
 					<scroll>false</scroll>
 				</control>
@@ -2978,7 +2978,7 @@
 					<align>left</align>
 					<font>Reg32</font>
 					<textcolor>white</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<label>[B]$INFO[VideoPlayer.Tagline][/B]</label>
 					<scroll>false</scroll>
 					<visible>!String.IsEmpty(VideoPlayer.Tagline)</visible>
@@ -2989,7 +2989,7 @@
 					<height>560</height>
 					<label>$INFO[VideoPlayer.Plot]</label>
 					<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
-					<shadowcolor>dimgray</shadowcolor>
+					<shadowcolor>black</shadowcolor>
 					<align>justify</align>
 					<font>Reg28</font>
 					<visible>!String.IsEmpty(VideoPlayer.Plot)</visible>
