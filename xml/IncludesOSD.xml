@@ -2905,7 +2905,7 @@
 			<control type="image">
 				<width>100%</width>
 				<height>100%</height>
-				<texture background="true" border="15">special://home/addons/resource.images.backgroundoverlays.basic/resources/Dark.png</texture>
+				<texture background="true" border="15">special://skin/extras/Dark.png</texture>
 				<colordiffuse>$INFO[Skin.String(OSDPanelColor)]</colordiffuse>
 			</control>
 			<!--Video Cover-->
@@ -2951,16 +2951,7 @@
 					<scroll>false</scroll>
 				</control>
 				<!-- OSDLabel5 -->
-				<control type="label" id="74823">
-					<width>980</width>
-					<align>left</align>
-					<font>Reg34</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<label>$VAR[OSDLabel5]</label>
-					<scroll>false</scroll>
-					<visible>!String.IsEmpty(Control.GetLabel(74823))</visible>
-				</control>
+				
 				<!-- details info -->
 				<control type="label">
 					<width>1000</width>
@@ -2982,6 +2973,16 @@
 					<label>[B]$INFO[VideoPlayer.Tagline][/B]</label>
 					<scroll>false</scroll>
 					<visible>!String.IsEmpty(VideoPlayer.Tagline)</visible>
+				</control>
+				<control type="label" id="74823">
+					<width>980</width>
+					<align>left</align>
+					<font>Bold34</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$VAR[OSDLabel5]</label>
+					<scroll>false</scroll>
+					<visible>!String.IsEmpty(Control.GetLabel(74823))</visible>
 				</control>
 				<!-- plot -->
 				<control type="textbox">
